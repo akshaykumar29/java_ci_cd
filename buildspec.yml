@@ -18,3 +18,4 @@ artifacts:
   type: zip
   paths:
     - target/*.jar
+    - appspec.yml
