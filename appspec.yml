@@ -2,9 +2,13 @@ version: 0.0
 os: linux
 files:
 - source: /
-  destination: /home/ubuntu/
+  destination: /home/ubuntu
 hooks:
 AfterInstall:
+  - location: appstart.sh
+    timeout: 300
+    runas: root
+ApplicationStart:
   - location: appstart.sh
     timeout: 300
     runas: root
